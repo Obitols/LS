@@ -5,34 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.webp">
-    <title>OBITOLS</title>
+    <link rel="icon" href="./icons/logo.webp">
+    <title>UCHIHAS</title>
 </head>
 
-<body style="background-color: aqua;">
+<body style="background-color: rgb(185, 166, 169);">
     <nav>
         <ul>
-            <li id="home"><a href=#>HOME</a></li>
-            <li id="theme"><a href="#">THEAMS</a></li>
-            <li id="login"><a href="#">LOGIN</a></li>
+            <li><button id="lo">REGISTER</button></li>
         </ul>
     </nav>
-    <h1 id="one">Choose your favourite HERO</h1>
-    <main id="heros" style="text-align: center;">
-
-        <img class="hero" src="hero1.png" alt="image">
-        <img class="hero" src="hero1.png" alt="image">
-        <img class="hero" src="hero1.png" alt="image">
-        <img class="hero" src="hero1.png" alt="image">
-
+    <div id="login"></div>
+    <div id="popup">
+        <fieldset>
+            <h1 style="text-align: center;">REGISTRATION</h1>
+            <div class="reg">
+                <img src="./icons/login.webp" alt="image" width="200rem" height="400rem">
+                <form method="post" action="register.php">
+                    <div class="aln">
+                        <label for="i1">USERNAME</label>
+                        <input type="text" id="i1" name="username" size="20" maxlength="20" required >
+                        <label for="i2">CLAN</label>
+                        <select name="clane" id="i2"  required>
+                            <option value="" selected hidden></option>
+                            <option value="UCHICHA">UCHIHA</option>
+                            <option value="UZUMAKI">UZUMAKI</option>
+                            <option value="SENJU">SENJU</option>
+                            <option value="HYUGA">HYUGA</option>
+                            <option value="HATAKE">HATAKE</option>
+                        </select>
+                        <label for="i3">SENSAI</label>
+                        <input type="text" id="i3" name="sensai" size="20"maxlength="20" required>
+                        <label for="i4">NICK NAME</label>
+                        <input type="text" id="i4" name="nickname" size="20" maxlength="20" required>
+                        <label for="i5">MOBILE NO</label>
+                        <input type="number" id="i5" name="mobileno"  required>
+                        <div>
+                            <input type="submit" id="clo" value="REGISTER" style="margin-top: 0.9rem;">
+                            <input type="reset" id="back" value="BACK">
+                        </div>
+                    </div>
+                </form>
+        </fieldset>
+    </div>
+    <h1 id="one">CHOOSE YOUR FAVOURITE HERO</h1>
+    <main>
+        <div class="arr"><img class="hero" src="./madara/hero1.png" alt="image">
+            <a href="madara.html" target="_blank">MADARA UCHIHA</a>
+        </div>
+        <div class="arr"><img class="hero" src="./itachi/hero2.jpeg" alt="image">
+            <a href="itachi.html" target="_blank">ITACHI UCHIHA</a>
+        </div>
+        <div class="arr"><img class="hero" src="./obito/hero3.jpeg" alt="image">
+            <a href="obito.html" target="_blank">OBITO UCHIHA</a>
+        </div>
+        <div class="arr"><img class="hero" src="./sasuka/hero4.jpeg" alt="image">
+            <a href="sasuka.html" target="_blank">SASUKE UCHIHA</a>
+        </div>
     </main>
     <div id="info">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quod sunt aliquid? Sint vel pariatur temporibus cum maiores a harum iure deserunt, accusantium totam quis molestiae suscipit blanditiis nam qui est sed cumque necessitatibus doloribus amet nihil explicabo saepe impedit? Voluptatum, error laboriosam perferendis alias quia obcaecati facilis in ipsam consequuntur velit vitae asperiores omnis dolor veritatis reiciendis odio maiores minus iusto temporibus provident cum! Esse, dolorem harum. Non sequi quas asperiores sed ratione cupiditate maiores deserunt, delectus quia accusantium quidem eum dolore! Quis amet voluptate neque culpa, quasi voluptatem maiores, vero aut sunt optio sed a explicabo. Ex, natus.</p>
-  
-    <img id="sh" src="logo.webp" >
-</div>
-
-
+        <p>The Uchiha Clan is one of the four noble clans of the Hidden Leaf Village. They possess a powerful Kekkei
+            Genkai called the Sharingan and have incredibly strong prodigies in every generation. The Uchiha Clan are
+            descendants of Indra Otsutsuki. They received the Sharingan from his lineage after he received it from his
+            father, Hagoromo Otsutsuki.The Uchiha were at constant war before they decided to choose peace and become a
+            part of the Hidden Leaf
+            Village.They were an important part of the Leaf Village, being in control of the Konoha Police Force.
+            However, after a certain tragedy struck, The Uchiha were blamed for it by the villagers and were distrusted,
+            eventually leading to the downfall of the Uchiha Clan.The Uchiha Clan members are descendants of Indra
+            Otsutsuki, the older son of Hagoromo Otsutsuki. He waged
+            war with his brother, Asura Otsutsuki, for being their father’s successor. After years and years of war, at
+            some point in time, the ones born with the ability to wield the Sharingan came to be known as the Uchiha,
+            while Asura’s descendants came to be known as the Senju.</p>
+        <img id="sh" src="./icons/logo.webp" alt="image">
+    </div>
 </body>
+
+<script>
+    var a = document.getElementById("login")
+    var b = document.getElementById("popup")
+    var d = document.getElementById("lo")
+    d.addEventListener("click", function () {
+        a.style.display = "block"
+        b.style.display = "flex"
+    })
+    var c = document.getElementById("clo")
+    c.addEventListener("click", function () {
+        if (sensai != 0) {
+            a.style.display = "none"
+            b.style.display = "none"
+        }
+    })
+    var bk = document.getElementById("back")
+    bk.addEventListener("click", function () {
+        a.style.display = "none"
+        b.style.display = "none"
+    })
+
+</script>
 
 </html>
