@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    background-color: rgb(255, 0, 0);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+    line-height: 40px;
+}
+
+#sh {
+    width: 300px;
+    height: justify;
+}
+
+#info {
+    display: flex;
+    height: 30%;
+    justify-content: space-around;
+}
+
+#info p {
+    width: 60%;
+    margin-top: 9%;
+    text-align: center;
+    text-indent: 5%;
+}
+
+.age {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+    width: 20%;
+    border-radius: 3rem;
+    border-color: rgb(255, 0, 0);
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    justify-content: space-around;
+}
+
+legend img {
+    filter: drop-shadow(4px 6px 20px rgb(255, 0, 0));
+    filter: drop-shadow(0 6px 20px rgb(255, 0, 0));
+}
+
+.friend img {
+    width: 100px;
+    height: justify;
+    border-radius: 1rem;
+}
+
+.friend {
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.friend p {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    margin-top: 4%;
+    height: 9rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 4, 33);
+    color: rgb(220, 230, 239);
+}
+
+.foot {
+    margin-top: 0.9rem;
+    width: 30px;
+    height: 30px;
+}
